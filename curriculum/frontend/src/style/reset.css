@@ -13,7 +13,7 @@ h4,
 h5,
 h6,
 p,
-blockquote,
+flexquote,
 pre,
 a,
 abbr,
@@ -85,6 +85,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  display: flex;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -99,7 +100,7 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: flex;
 }
 
 body {
@@ -113,13 +114,13 @@ ul {
   list-style: none;
 }
 
-blockquote,
+flexquote,
 q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
+flexquote:before,
+flexquote:after,
 q:before,
 q:after {
   content: "";
