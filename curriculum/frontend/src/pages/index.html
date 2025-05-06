@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Bosetti</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/curriculum/frontend/src/style/reset.css">
+  <link rel="stylesheet" href="/curriculum/frontend/src/style/header.css">
+  <link rel="stylesheet" href="/curriculum/frontend/src/style/container.css">
+  <style>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My curriculum</title>
-    <link rel="stylesheet" href="/curriculum/frontend/src/style/reset.css">
-    <link rel="stylesheet" href="/curriculum/frontend/src/style/index.css">
-    <link rel="stylesheet" href="/curriculum/frontend/src/style/header.css">
-    
-
+  </style>
 </head>
-
 <body>
 
-    <header>
-     
-        <nav>
-            <div class="menu" id="menu">
-                <a href="/curriculum/frontend/src/pages/index.html" class="myName" id="myName">Bosetti</a>
-                <div class="options" id="options">
-                    <a href="">About Me</a>
-                    <a href="">Contact</a>
-                    <a href=""">Skills</a>
-                </div>
-            </div>
-        </nav>
+  <header>
+
+    <a href="#" class="myName">Bosetti</a>
+    <nav>
+      <div class="menu">
+        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About Me</button>
+        <button onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })">Skills</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>João Vitor Bosetti</h1>
+      <p>Estudante do IFSC Xanxerê</p>
+    </section>
+
+    <section id="skills">
+      <h1>Skills</h1>
+      <p>HTML, CSS, Java, Python</p>
+      <p>Git, Linux,</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: joaovitorbosetti09@gmail.com</p>
+        <p>Phone: +55 (49) 98404-6698</p>
+      </section>
+  
+  </main>
 
 </body>
 </html>

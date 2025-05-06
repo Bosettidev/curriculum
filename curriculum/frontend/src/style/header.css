@@ -1,9 +1,10 @@
 html {
-    background-color: #101828;
+    background-color: 	#0d0d0d;
+    font-family: "DM Sans", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
     margin: 0;
 }
 
@@ -12,7 +13,7 @@ header {
     display: flex;
     justify-content: center; /* Centraliza os itens */
     align-items: center;
-    background-color: #101828;
+    background-color: 	#0d0d0d;
     padding: 15px 20px;
     color: aliceblue;
     flex-wrap: wrap;
@@ -24,7 +25,8 @@ header {
     text-decoration: none;
     color: aliceblue;
     font-size: 45px;
-    margin-right: 300q;
+    margin-right: 300px;
+    margin-left: 300px;
     margin-top: -20px;
 }
 
@@ -39,31 +41,31 @@ header {
     margin-top: 20px;
 }
 
-.menu a {
+.menu button {
     color: aliceblue;
     text-decoration: none;
     position: relative;
     padding: 5px 0;
+    background: transparent;
+    font-size: 20px;
 }
-.options{
-    gap: 40px;
-}
+
 /* Hover com animação da barra inferior */
-.options a::after {
+.menu button::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; /* Abaixei a barra */
+    bottom: 2px; /* Abaixei a barra */
     width: 100%;
     height: 3px;
-    background: green;
+    background: #00ff00;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
     transform-origin: left;
 }
 
-.menu a:hover::after,
-.menu a.active::after {
+.menu button:hover::after,
+.menu button.active::after {
     transform: scaleX(1);
 }
 
@@ -76,7 +78,6 @@ header {
     .menu {
         display: none;
         flex-direction: column;
-        background: #333;
         width: 100%;
     }
 
@@ -84,7 +85,7 @@ header {
         display: flex;
     }
 
-    .menu a {
+    .menu button {
         padding: 10px;
     }
 }
